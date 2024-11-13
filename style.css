@@ -1,0 +1,69 @@
+/* 
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --fz-paragraph: 15px;
+
+  --font-family: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--Slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--White);
+    border-radius: 20px;
+    max-width: 280px;
+    padding: 15px;
+}
+
+.qrcode{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.title{
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 15px;
+    color: var(--Slate-900);
+}
+
+.text{
+    text-align: center;
+    font-size: 13px;
+    padding: 0 15px;
+    color: var(--Slate-500);
+    margin-bottom: 18px;
+}
